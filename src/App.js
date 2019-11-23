@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import chatMessages from './data/messages.json';
+import ChatLog from './components/ChatLog';
 
 const App = () => {
   console.log(chatMessages);
@@ -11,7 +12,9 @@ const App = () => {
         <h1>Application title</h1>
       </header>
       <main>
-
+        <ChatLog
+        entries={chatMessages}
+        />
       </main>
     </div>
   );
